@@ -1,4 +1,4 @@
-Create a ecosystem that fulfills basic needs (warmth, human interaction, etc.).
+Create an ecosystem that fulfills basic needs (warmth, human interaction, etc.).
 
 Scarcity in location and availability, but not in resources, which are abundantly available and transportable by vehicles that exist
 
