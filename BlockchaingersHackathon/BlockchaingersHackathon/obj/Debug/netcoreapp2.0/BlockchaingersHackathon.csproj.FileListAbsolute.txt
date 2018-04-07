@@ -9,3 +9,14 @@ c:\users\bijlar\documents\visual studio 2017\Projects\BlockchaingersHackathon\Bl
 c:\users\bijlar\documents\visual studio 2017\Projects\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.AssemblyInfo.cs
 c:\users\bijlar\documents\visual studio 2017\Projects\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.dll
 c:\users\bijlar\documents\visual studio 2017\Projects\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.pdb
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\bin\Debug\netcoreapp2.0\BlockchaingersHackathon.deps.json
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\bin\Debug\netcoreapp2.0\BlockchaingersHackathon.runtimeconfig.json
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\bin\Debug\netcoreapp2.0\BlockchaingersHackathon.runtimeconfig.dev.json
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\bin\Debug\netcoreapp2.0\BlockchaingersHackathon.dll
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\bin\Debug\netcoreapp2.0\BlockchaingersHackathon.pdb
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.csprojResolveAssemblyReference.cache
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.csproj.CoreCompileInputs.cache
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.AssemblyInfoInputs.cache
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.AssemblyInfo.cs
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.dll
+C:\GitHub\CGI\BlockchaingersHackathon\BlockchaingersHackathon\obj\Debug\netcoreapp2.0\BlockchaingersHackathon.pdb

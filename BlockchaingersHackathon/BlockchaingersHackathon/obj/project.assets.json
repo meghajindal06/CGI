@@ -13499,11 +13499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bijlar\\Documents\\Visual Studio 2017\\Projects\\BlockchaingersHackathon\\BlockchaingersHackathon\\BlockchaingersHackathon.csproj",
+      "projectUniqueName": "C:\\GitHub\\CGI\\BlockchaingersHackathon\\BlockchaingersHackathon\\BlockchaingersHackathon.csproj",
       "projectName": "BlockchaingersHackathon",
-      "projectPath": "C:\\Users\\bijlar\\Documents\\Visual Studio 2017\\Projects\\BlockchaingersHackathon\\BlockchaingersHackathon\\BlockchaingersHackathon.csproj",
+      "projectPath": "C:\\GitHub\\CGI\\BlockchaingersHackathon\\BlockchaingersHackathon\\BlockchaingersHackathon.csproj",
       "packagesPath": "C:\\Users\\bijlar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bijlar\\Documents\\Visual Studio 2017\\Projects\\BlockchaingersHackathon\\BlockchaingersHackathon\\obj\\",
+      "outputPath": "C:\\GitHub\\CGI\\BlockchaingersHackathon\\BlockchaingersHackathon\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
