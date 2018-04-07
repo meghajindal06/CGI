@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Simulation</title>
+    <link rel="stylesheet" type="text/css" href="css/visual.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="network-value">
+        <p>Network value:</p>
+        <p class="formula">1 * (n^1.69 * 3)</p>
+        <p class="value"></p>
+    </div>
+    <div id="content">
+        <canvas id="background" width="1200" height="800"></canvas>
+        <div id="diagram">
+            <img id="node1" class="element node" src="img/node.png" />
+            <img id="node2" class="element node" src="img/node.png" />
+        </div>
+
+        <div id="controls">
+            <button class="add-node">
+                Add actor
+            </button>
+        </div>
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/visual.js"></script>
+</body>
+</html>

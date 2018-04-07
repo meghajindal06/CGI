@@ -1,0 +1,81 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+#network-value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    font-size: 50px;
+    padding: 10px 40px 10px 15px;
+}
+
+#content {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100vh;
+}
+
+#background {
+    display: block;
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid black;
+}
+
+#diagram {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0px solid black;
+}
+
+    #diagram .element {
+        position: absolute;
+        z-index: 750;
+    }
+
+    #diagram .resource {
+        margin: 0 -17px -17px 0;
+        z-index: 500;
+    }
+
+    #node1 {
+        top: 250px;
+        left: 250px;
+    }
+
+    #node2 {
+        top: 250px;
+        right: 250px;
+    }
+
+#controls {
+    position: absolute;
+    top: 800px;
+    padding: 10px 25px;
+}
+
+    #controls button {
+        border: 0px;
+        background-color: #2BBCE5;
+        color: white;
+        padding: 20px 80px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+    }
