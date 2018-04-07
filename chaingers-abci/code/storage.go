@@ -14,11 +14,12 @@ type StorageApplication struct {
 	types.BaseApplication
 
 	Users             map[string]User
+	Transactions      map[string][]Transaction
 }
 
 // Initialisation
 func NewStorageApplication() *StorageApplication {
-	return &StorageApplication{Users: make(map[string]User)}
+	return &StorageApplication{Users: make(map[string]User), Transactions: make(map[string][]Transaction)}
 }
 
 // Storing data in the blockchain
@@ -27,15 +28,17 @@ func (app *StorageApplication) DeliverTx(tx []byte) types.Result {
 
 	input := string(tx[:])
 
-	// Map json naar string array
+	// Map json to string array
 	var data map[string]interface{}
 	json.Unmarshal(tx[:], &data)
 
 	inputBytes := bytes.Trim([]byte(input), string([]byte{0}))
 	if (data["MessageType"] == "User") {
-		//Store User
-		messageType := data["MessageType"].(string)
-		DeliverUser(app, inputBytes, messageType)
+		// Store User
+		DeliverUser(app, inputBytes)
+	} else if (data["MessageType"] == "Transaction") {
+		// Store transaction
+		DeliverTransaction(app, inputBytes)
 	}
 
 	return types.OK
@@ -58,8 +61,15 @@ func (app *StorageApplication) CheckTx(tx []byte) types.Result {
 	inputBytes := bytes.Trim([]byte(input), string([]byte{0}))
 	if (data["MessageType"] == "User") {
 		//Check user for validation errors
-		messageType := data["MessageType"].(string)
-		error := CheckUser(app, inputBytes, messageType)
+		error := CheckUser(app, inputBytes)
+		if error != "" {
+			return types.ErrBaseInvalidInput.SetLog(error)
+		} else {
+			//No errors found
+			return types.OK
+		}
+	} else if (data["MessageType"] == "Transaction") {
+		error := CheckTransaction(app, inputBytes)
 		if error != "" {
 			return types.ErrBaseInvalidInput.SetLog(error)
 		} else {
@@ -105,6 +115,9 @@ func (app *StorageApplication) Query(reqQuery types.RequestQuery) types.Response
 	if reqQuery.Path == "User" {
 		// Find user
 		return QueryUser(app, inputBytes)
+	} else if reqQuery.Path == "Transaction" {
+		// Find transaction(s)
+		return QueryTransaction(app, inputBytes);
 	}
 
 	// No type of data defined in path, so error is given

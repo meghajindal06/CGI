@@ -22,7 +22,7 @@ type UserQuery struct {
 }
 
 /// Store the user in the blockchain
-func DeliverUser(app *StorageApplication, input []byte, messageType string) {
+func DeliverUser(app *StorageApplication, input []byte) {
 	//input= { "MessageType":"User", "Username":"bijlar", "FirstName":"Adriaan", "LastName":"Bijl", "Password":"DnbBPCFu1ngp7DQFlNMrh3AKZE/VbdJ2J9TXTqPlraA=" }
 	var data User
 	json.Unmarshal(input, &data)
@@ -31,7 +31,7 @@ func DeliverUser(app *StorageApplication, input []byte, messageType string) {
 }
 
 /// Check the user for validation errors for registration
-func CheckUser(app *StorageApplication, input []byte, messageType string) string {
+func CheckUser(app *StorageApplication, input []byte) string {
 	var data User
 	err := json.Unmarshal(input, &data)
 
